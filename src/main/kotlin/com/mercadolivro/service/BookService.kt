@@ -23,7 +23,7 @@ class BookService(
     }
 
     fun findActives(pageable: Pageable): Page<BookModel> {
-        return bookRepository.findByStatus(BookStatus.OUTRO_BUG, pageable)
+        return bookRepository.findByStatus(BookStatus.ATIVO, pageable)
     }
 
     fun findById(id: Int): BookModel {
