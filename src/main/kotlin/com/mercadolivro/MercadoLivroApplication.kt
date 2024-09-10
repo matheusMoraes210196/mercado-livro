@@ -9,6 +9,5 @@ import org.springframework.scheduling.annotation.EnableAsync
 class MercadoLivroApplication
 
 fun main(args: Array<String>) {
-	println("Commit novo")
 	runApplication<MercadoLivroApplication>(*args)
 }
