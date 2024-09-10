@@ -38,7 +38,7 @@ data class BookModel(
                 name: String,
                 price: BigDecimal,
                 customer: CustomerModel? = null,
-                status: BookStatus?): this(id, "Meu Bug", price, customer) {
+                status: BookStatus?): this(id, name, price, customer) {
                     this.status = status
                 }
 }
