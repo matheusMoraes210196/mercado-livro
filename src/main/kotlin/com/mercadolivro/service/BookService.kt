@@ -23,6 +23,7 @@ class BookService(
     }
 
     fun findActives(pageable: Pageable): Page<BookModel> {
+        println("Esse vai ser um conflito?")
         return bookRepository.findByStatus(BookStatus.ATIVO, pageable)
     }
 
